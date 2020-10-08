@@ -20,18 +20,7 @@ closeX.addEventListener("click", openMenu);
 arrowsDown.addEventListener("click", openTopBar);
 urGoingDown.addEventListener("click", downMenu);
 
-
-// let widthMatch = window.matchMedia("(min-width: 500px;)");
-
-// let bodyBody = document.querySelector('global-container-id');
-// function offAll(event){
-//     if (event.target == verticalNav){
-//         verticalNav.style.display = "none"
-
-//     }
-    
-// }
-// bodyBody.addEventListener('click', offAll);
+/**************************MAIN SLIDE**************************/
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
@@ -94,3 +83,60 @@ if (auto) {
   // Run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+/**************************************************************/
+
+
+/*************************SALES SLIDER*************************/
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.carousel-list'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    dragVelocity: 1,
+    dots: '.carousel-bullets',
+    arrows: {
+      prev: '.carousel-prev',
+      next: '.carousel-next'
+    },
+    responsive: [
+      {
+        // screens greater than >= 320px
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 480px
+        breakpoint: 480,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 580px
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 850px
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 1100px
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+});
+/**************************************************************/

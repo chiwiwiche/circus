@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distribuidora Circus</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/9a5a9ed67d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9a5a9ed67d.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <main id="global-container-id" class="global-container-class">
@@ -96,7 +98,7 @@
             </div>
             <div class="slider-container">
               <div class="slider">
-                  <div class="slide current tata">
+                  <div class="slide current">
                     <div class="content">
                       <h2>Slide One</h2>
                       <p>
@@ -104,7 +106,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="slide tata">
+                  <div class="slide">
                     <div class="content">
                       <h2>Slide Two</h2>
                       <p>
@@ -112,7 +114,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="slide tata">
+                  <div class="slide">
                     <div class="content">
                       <h2>Slide Three</h2>
                       <p>
@@ -120,7 +122,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="slide tata">
+                  <div class="slide">
                     <div class="content">
                       <h2>Slide Four</h2>
                       <p>
@@ -128,7 +130,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="slide tata">
+                  <div class="slide">
                     <div class="content">
                       <h2>Slide Five</h2>
                       <p>
@@ -136,7 +138,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="slide tata">
+                  <div class="slide">
                     <div class="content">
                       <h2>Slide Six</h2>
                       <p>
@@ -144,20 +146,15 @@
                       </p>
                     </div>
                   </div>
-                  <!-- <div class="buttons">
-                    <button id="prev"><i class="fas fa-arrow-left"></i></button>
-                    <button id="next"><i class="fas fa-arrow-right"></i></button>
-                  </div> -->
               </div>
             <div class="buttons">
               <button id="prev"><i class="fas fa-arrow-left"></i></button>
               <button id="next"><i class="fas fa-arrow-right"></i></button>
             </div>
-            </div><!-- slider-container-ends-->
+            </div>
         </div>
          
         <div class="feautures-container">
-            <!-- the extras -->
             <div class="feautures-divs">
               <div class="feautures-svg">
                 <i class="fas fa-truck fa-2x"></i>
@@ -199,16 +196,200 @@
             </div>
         </div>
 
-        <section style="margin-top: 50px;">
+        <section class="slider-wrap">
             <!-- ofertas seccion -->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias impedit minima reiciendis possimus! Cum in laborum, sint officia neque qui, quam quae sunt facere laudantium aperiam ea ipsa quo.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias impedit minima reiciendis possimus! Cum in laborum, sint officia neque qui, quam quae sunt facere laudantium aperiam ea ipsa quo.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias impedit minima reiciendis possimus! Cum in laborum, sint officia neque qui, quam quae sunt facere laudantium aperiam ea ipsa quo.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias impedit minima reiciendis possimus! Cum in laborum, sint officia neque qui, quam quae sunt facere laudantium aperiam ea ipsa quo.</p>
+          <H1 class="slider-wrap-tittle">Ofertas</H1>
+
+          <div class="carousel">
+            <div class="carousel-container">
+              <button aria-label="Previous" class="carousel-prev">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button aria-label="Next" class="carousel-next">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+
+              <div class="carousel-list">
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/1.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.100.&ordm;&ordm;<span>Q.125.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">15%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/2.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.200.&ordm;&ordm;<span>Q.225.&ordm;&ordm;</span></p>
+                    <p class="runOut">AGOTADO</p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">10%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/3.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.300.&ordm;&ordm;<span>Q.325.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">20%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/4.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.400.&ordm;&ordm;<span>Q.425.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">15%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/5.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.500.&ordm;&ordm;<span>Q.525.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">10%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/6.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.600.&ordm;&ordm;<span>Q.625.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">5%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/7.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.700.&ordm;&ordm;<span>Q.725.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">20%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/8.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.800.&ordm;&ordm;<span>Q.825.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">15%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/9.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;<span>Q.925.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">10%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-elements">
+                  <img src="imgs/ofertas/10.jpg" alt="Licuadora">
+                  <div class="carousel-text-container">
+                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="carousel-text-container-price">Q.1,000.&ordm;&ordm;<span>Q.1,250.&ordm;&ordm;</span></p>
+                    <div class="sale-tag-container">
+                      <div class="sale-tag">
+                        <p class="sale-tag-text">5%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div role="tablist" class="carousel-bullets"></div> -->
+          </div>
         </section>
         
         <div>
             <!-- banner area -->
+            <div style="width: 100%; height: 400px; background: #fff;"></div>
         </div>
 
         <section>
@@ -230,6 +411,7 @@
         </div>
 
     </main>
+    <script src="scripts/glider.min.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>

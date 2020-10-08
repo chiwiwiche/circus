@@ -30,6 +30,9 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+button:focus{ 
+    outline: none; 
+}
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -80,6 +83,13 @@ nav{
 
 
 
+
+
+
+
+
+
+
 /*******************************************ID*******************************************/
 #container-topbar-id{
     align-items: center;
@@ -105,6 +115,64 @@ nav{
 
 
 /******************************************CLASS******************************************/
+.carousel-container{
+    text-align: right;
+}
+.carousel-elements{
+    border:1px solid var(--main-light-grey);
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+}
+.carousel-list{
+    /* overflow:hidden; */
+}
+.carousel-prev,
+.carousel-next{
+    width: 30px;
+    height: 30px;
+    border:none;
+    cursor: pointer;
+    background: var(--main-dark-grey);
+    color: var(--main-light-grey);
+    border-radius: 100%;
+    margin:0 0 10px 0;
+}
+.carousel-prev:hover,
+.carousel-next:hover{
+    background: var(--main-red);
+    color: var(--main-white);
+}
+.carousel-text-container{
+    color: var(--lighter-dark-grey);
+    font-weight: 300;
+    text-align: left;
+
+}
+.carousel-text-container .carousel-text-container-tittle{
+    margin: 10px 0 5px 0;
+    color: var(--lighter-dark-grey);
+    font-weight: 500;
+    font-weight: bold;
+    
+
+}
+.carousel-text-container-price{
+    color: red;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.carousel-text-container-price span{
+    color: var(--lighter-dark-grey);
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 0.8em;
+    text-decoration: line-through;
+}
+.checked {
+    color: orange;
+}
 .closeX{
     display: none;
 }
@@ -272,12 +340,66 @@ nav{
 .nav-links li a:hover{
     background: var(--main-light-grey);
 }
-.slide-and-var{
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 1fr;
-    padding: 25px 100px;
-    gap: 0px 25px;
+.runOut{
+    position: absolute;
+    padding: 10px 0;
+    width: 100%;
+    color: var(--main-white);
+    background: var(--main-blue);
+    top:calc(50% - 38px);
+    left:0;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: bold;
+    font-family: Arial black;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px var(--main-red);
+}
+.sale-tag {
+    background: var(--main-red);
+    width: 35px;
+    height: 35px;
+    position: relative;
+    text-align: center;
+
+}
+.sale-tag-container{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+}
+
+.sale-tag:before,
+.sale-tag:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background: var(--main-red);
+}
+.sale-tag:before {
+    transform: rotate(30deg);
+
+}
+.sale-tag:after {
+    transform: rotate(60deg);
+}
+
+.sale-tag-text{
+    position:absolute;
+    z-index:100;
+    color:white;
+    left:0;
+    right:0;
+    top:9px;
+    transform: translateY();
+    margin: auto;
+    font-size:0.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+
 }
 .side-nav-a{
     padding: 25px 0;
@@ -306,6 +428,13 @@ nav{
     flex-direction: column;
     width: 100%;
 }
+.slide-and-var{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    padding: 25px 100px;
+    gap: 0px 25px;
+}
 .slide {
     position: absolute;
     width: 100%;
@@ -323,6 +452,16 @@ nav{
     position: relative;
     height: 100%;
     width: 100%;
+}
+.slider-wrap{
+    margin-top: 50px;
+    padding: 0 100px;
+}
+.slider-wrap-tittle{
+    color: var(--main-dark-grey);
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-color: var(--main-red);
 }
 .slide .content {
     position: absolute;
@@ -384,6 +523,7 @@ nav{
 }
 
 
+
 /*****************************************************************************************/
 
 
@@ -439,6 +579,10 @@ nav{
 
 
 /******************************************CLASS******************************************/
+    .carousel-prev,
+    .carousel-next{
+        margin:0 25px 10px 0;
+    }
     .closeX{
         cursor: pointer;
         width: 100%;
@@ -533,6 +677,9 @@ nav{
     .side-nav-container{
         display: none;
     }
+    .slider-wrap{
+        padding: 0 25px;
+    }
     .top-triangle{
         color: var(--main-white);
         display:inherit;
@@ -554,6 +701,7 @@ nav{
         display: block;
         
     }
+    
     
 
     
@@ -642,6 +790,9 @@ nav{
     .slide-and-var{
         grid-template-rows: 100vh;
     }
+    .slider-wrap{
+        padding: 0 10px;
+    }
     
 /*****************************************************************************************/
 }
@@ -652,6 +803,13 @@ nav{
 /*******************************************ID********************************************/
 /*****************************************************************************************/
 /******************************************CLASS******************************************/
+.carousel-elements{
+    margin-right: 0px;
+}
+.carousel-prev,
+.carousel-next{
+    margin:0 0px 10px 0;
+}
 /*****************************************************************************************/
 }
 
