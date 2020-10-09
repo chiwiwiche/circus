@@ -140,3 +140,7 @@ window.addEventListener('load', function(){
   });
 });
 /**************************************************************/
+
+/*************************DATE FOOTER*************************/
+document.querySelector('.dc-copyright').innerHTML = ("All right reserved. Distribuidora Circus &#169; " + new Date().getFullYear());
+/*************************************************************/
