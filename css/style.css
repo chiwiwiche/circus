@@ -72,12 +72,154 @@ nav{
 }
 
 
+.bannaer-wrapper{
+    margin: 50px 0;
+    padding: 0 100px;
+   
+}
+.bannaer-wrapper img{
+    width: 100%;
+    height: auto;
+    
+}
+.new-products-wrapper{
+    padding: 0 100px;
+}
+.new-products-wrapper div{
+    background: var(--main-light-grey);
+    width: 100%;
+    height: 500px;
+    
+}
+.our-brands-wrapper{
+    margin:50px 0;
+    padding: 0 100px;
+}
+.our-brands-wrapper div{
+    background: var(--main-light-grey);
+    width: 100%;
+    height: 200px;
 
+}
+.footer-wrapper{
+    background: var(--main-blue);
+    width: 100%;
+    height: auto;
+    color: var(--main-white);
+    padding:0 100px;
+    /* border-bottom: 1px solid var(--main-light-grey); */
 
+   
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid var(--main-light-grey);
+    padding-bottom: 50px;
+}
 
+.footer-direction{
+    font-size: 1.2em;
+}
 
+.footer-email,
+.footer-phone,
+.footer-waze{
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    /* background: red; */
+    text-align: center;
+    /* border-bottom: 1px solid var(--main-light-grey); */
+    
+}
+.footer-email a,
+.footer-phone a,
+.footer-waze a{
+    color: var(--main-white);
+}
 
+.footer-email{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--main-light-grey);
+    border-right: 1px solid var(--main-light-grey);
 
+}
+.footer-phone{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--main-light-grey);
+
+}
+.footer-phone a{
+    font-size: 1.2em;
+    margin:5px 0;
+}
+
+.footer-text{
+    font-weight: bold;
+    margin: 25px 0;
+    
+    
+}
+.footer-tittle{
+    /* width: 100%;
+    height: auto; */
+    text-align: center;
+    padding: 50px 0;
+    color: var(--main-light-grey);
+
+   
+}
+.footer-waze{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--main-light-grey);
+}
+.footer-waze img{
+    display: block;
+    margin:0 auto;
+}
+.devBy{
+    background: var(--main-blue);
+    color: var(--main-light-grey);
+    font-size: 0.7em;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.devBy a{
+    color: var(--main-light-grey);
+    margin-left: 10px;
+}
+.devChiwiwiche{
+    color:var(--main-red);
+    font-size: 1.2em;
+}
+
+.social-cards-wrapper{
+    width: 100%;
+    height: auto;
+    padding: 10px 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-white);
+    background: var(--main-blue);
+    
+    
+    
+}
+.credit-cards i{
+    margin-right: 10px;
+}
+.social a{
+    margin-left: 20px;
+    color: var(--main-white);
+}
 
 
 
@@ -702,6 +844,11 @@ nav{
         
     }
     
+    .bannaer-wrapper{
+        margin: 50px 0;
+        padding: 0 25px;
+       
+    }
     
 
     
@@ -794,6 +941,12 @@ nav{
         padding: 0 10px;
     }
     
+
+    .bannaer-wrapper{
+        margin: 50px 0;
+        padding: 0 10px;
+       
+    }
 /*****************************************************************************************/
 }
 
