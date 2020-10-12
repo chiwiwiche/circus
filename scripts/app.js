@@ -93,7 +93,7 @@ window.addEventListener('load', function(){
     slidesToScroll: 1,
     draggable: true,
     dragVelocity: 1,
-    dots: '.carousel-bullets',
+    // dots: '.carousel-bullets',
     arrows: {
       prev: '.carousel-prev',
       next: '.carousel-next'
@@ -115,8 +115,8 @@ window.addEventListener('load', function(){
           slidesToScroll: 1,
         }
       },{
-        // screens greater than >= 580px
-        breakpoint: 580,
+        // screens greater than >= 590px
+        breakpoint: 590,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -143,4 +143,60 @@ window.addEventListener('load', function(){
 
 /*************************DATE FOOTER*************************/
 document.querySelector('.dc-copyright').innerHTML = ("All right reserved. Distribuidora Circus &#169; " + new Date().getFullYear());
+/*************************************************************/
+
+
+/*********************NEW PRODUCTS SLIDER*********************/
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.carousel-list-second'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    dragVelocity: 1,
+    // dots: '.carousel-bullets',
+    arrows: {
+      prev: '.carousel-prev-second',
+      next: '.carousel-next-second'
+    },
+    responsive: [
+      {
+        // screens greater than >= 320px
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 480px
+        breakpoint: 480,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 590px
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 850px
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },{
+        // screens greater than >= 1100px
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+});
 /*************************************************************/
