@@ -142,7 +142,7 @@ window.addEventListener('load', function(){
 /**************************************************************/
 
 /*************************DATE FOOTER*************************/
-document.querySelector('.dc-copyright').innerHTML = ("All right reserved. Distribuidora Circus &#169; " + new Date().getFullYear());
+document.querySelector('.copyright__dc').innerHTML = ("All right reserved. Distribuidora Circus &#169; " + new Date().getFullYear());
 /*************************************************************/
 
 
