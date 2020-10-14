@@ -11,688 +11,853 @@
 
 </head>
 <body>
-    <main id="global-container-id" class="global-container-class">
-        <div id="container-topbar-id" class="container-topbar-class">
-            <div class="container-topbar-phones">
-              <a href="tel:+50266618885"><i class="fas fa-phone-alt"></i> (502)6661-8885</a>
-              <a href="tel:+50258888800"><i class="fas fa-mobile-alt"></i> (502)5888-8800</a>
-              <a href="https://www.waze.com/ul?place=ChIJwQrBPdmgiYURiIIl5y72Re8&ll=14.62395720%2C-90.56130920&navigate=yes" target="_blank" rel="noopener noreferrer" class="container-topbar-phones-direction"><img src="imgs/waze.svg" alt="waze" class="waze-icon" height="18px" width="18px"> 30 Avenida 6-50 interior Mr.B zona 11,<span class="container-topbar-phones-span"><br> bodega 27 y 29, Guatemala C.A.</span></a>
+    <main class="main">
+        <div class="topbar">
+            <div class="topbar__contact">
+                <a href="tel:+50266618885" class="topbar__contact-links">
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <span>(502)6661-8885</span> 
+                </a>
+                <a href="tel:+50258888800" class="topbar__contact-links">
+                    <span><i class="fas fa-mobile-alt"></i></span>
+                    <span>(502)5888-8800</span>
+                </a>
+                <a href="https://www.waze.com/ul?place=ChIJwQrBPdmgiYURiIIl5y72Re8&ll=14.62395720%2C-90.56130920&navigate=yes" target="_blank" rel="noopener noreferrer" class="topbar__contact-links topbar--address">
+                    <img src="imgs/waze.svg" alt="waze" class="topbar__waze" height="18px" width="18px">
+                    <span class="topbar__address-span">30 Avenida 6-50 interior Mr.B zona 11,<span class="topbar__address-subspan"><br> bodega 27 y 29, Guatemala C.A.</span></span> 
+                </a>
             </div>
-            <div class="container-topbar-social">
-              <a href="https://www.facebook.com/DistribuidoraCircus/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a>
-              <a href="https://www.instagram.com/distribuidora_circus/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a>
-              <a href="https://wa.me/50258888800" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp fa-2x"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+            <div class="topbar__social">
+                <a href="https://www.facebook.com/DistribuidoraCircus/" class="topbar__social-links" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/distribuidora_circus/" class="topbar__social-links" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://wa.me/50258888800" class="topbar__social-links" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+                <a href="#" class="topbar__social-links" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-messenger fa-2x"></i>
+                </a>
             </div>    
-            <div class="top-triangle">
+            <div class="topbar__triangle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
                 </svg>
             </div> 
         </div>
         
-        <header>
-            <div class="header-img">
-                <img src="imgs/logo-distribuidora-circus.png" alt="Distribuidora Circus" height="200px" width="200px">
+        <header class="header">
+            <div class="header__logo">
+                <img src="imgs/logo-distribuidora-circus.png" class="header__img" alt="Distribuidora Circus" height="200px" width="200px">
                 <!-- <h4 class="slogan">¡Equipamos tus ideas!</h4> -->
-                <h4 class="slogan">#equipamostusideas</h4>
+                <a href="https://www.instagram.com/distribuidora_circus/" target="_blank"><h4 class="header__slogan">#equipamostusideas</h4></a> 
             </div>
-            <div class="google-search-var">
+            <div class="header__gsearch">
                 <script async src="https://cse.google.com/cse.js?cx=ece8dc085e55c1b07"></script>
                 <div class="gcse-search" data-as_sitesearch="www.distribuidora-circus.com"></div>
                 <script>
-                    window.onload = function(){
-                      document.getElementById('gsc-i-id1').placeholder = '¿Buscas algo en especial?';
-                    };
-                </script>    
+                  window.onload = function(){document.getElementById('gsc-i-id1').placeholder = '¿Buscas algo en especial?'};
+                </script>
             </div>
         </header>
 
-        <nav>
-            <div class="hamburger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-                  </svg>
+        <nav class="navbar">
+            <div class="navbar__bars">
+                <span class="navbar__icon-bars"><i class="fas fa-bars"></i></span>
             </div>
     
-            <ul class="nav-links">
-                <div class="closeX">
-                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M1.5 1.5l12 12m-12 0l12-12" stroke="currentColor"></path></svg>
+            <ul class="navbar__elements">
+                <div class="navbar__close-x">
+                    <span class="navbar__icon-closex"><i class="fas fa-times"></i></span>
                 </div>
-                <li class="urGoingDown">
-                    <a href="#">CATOLOGO
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" />
-                        </svg>
+                <li class="navbar__list navbar--dropdown">
+                    <a href="#" class="navbar__links navbar__dropdown">
+                        <span class="navbar__dropdown-link">CATOLOGO</span>
+                        <span class="navbar__dropdown-icon"><i class="far fa-arrow-alt-circle-down"></i></span>
                     </a>
-                    <ul class="vertical-nav">
-                        <li><a href="#">Panaderia y Repostería</a></li>
-                        <li><a href="#">Carnicería</a></li>
-                        <li><a href="#">Pizzería</a></li>
-                        <li><a href="#">Restaurante</a></li>
-                        <li><a href="#">Snacks y Fast Food</a></li>
-                        <li><a href="#">Línea Fría</a></li>
-                        <li><a href="#">Cafetería</a></li>
+                    <ul class="navbar__verticalnav-elements">
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Panaderia y Repostería</a></li>
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Carnicería</a></li>
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Pizzería</a></li>
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Restaurante</a></li>
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Snacks y Fast Food</a></li>
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Línea Fría</a></li>
+                        <li class="navbar__verticalnav-list"><a href="#" class="navbar__verticalnav-links">Cafetería</a></li>
                         <!-- <li><a href="#">Planchas</a></li> -->
                     </ul>
                 </li>
-                <li><a href="#"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M7.5.5l.325-.38a.5.5 0 00-.65 0L7.5.5zm-7 6l-.325-.38L0 6.27v.23h.5zm5 8v.5a.5.5 0 00.5-.5h-.5zm4 0H9a.5.5 0 00.5.5v-.5zm5-8h.5v-.23l-.175-.15-.325.38zM1.5 15h4v-1h-4v1zm13.325-8.88l-7-6-.65.76 7 6 .65-.76zm-7.65-6l-7 6 .65.76 7-6-.65-.76zM6 14.5v-3H5v3h1zm3-3v3h1v-3H9zm.5 3.5h4v-1h-4v1zm5.5-1.5v-7h-1v7h1zm-15-7v7h1v-7H0zM7.5 10A1.5 1.5 0 019 11.5h1A2.5 2.5 0 007.5 9v1zm0-1A2.5 2.5 0 005 11.5h1A1.5 1.5 0 017.5 10V9zm6 6a1.5 1.5 0 001.5-1.5h-1a.5.5 0 01-.5.5v1zm-12-1a.5.5 0 01-.5-.5H0A1.5 1.5 0 001.5 15v-1z" fill="currentColor"></path></svg></a></li>
-                <li><a href="#">OFERTAS</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">BUSCANOS</a></li>
+                <li class="navbar__list">
+                    <a href="#" class="navbar__links">
+                      <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M7.5.5l.325-.38a.5.5 0 00-.65 0L7.5.5zm-7 6l-.325-.38L0 6.27v.23h.5zm5 8v.5a.5.5 0 00.5-.5h-.5zm4 0H9a.5.5 0 00.5.5v-.5zm5-8h.5v-.23l-.175-.15-.325.38zM1.5 15h4v-1h-4v1zm13.325-8.88l-7-6-.65.76 7 6 .65-.76zm-7.65-6l-7 6 .65.76 7-6-.65-.76zM6 14.5v-3H5v3h1zm3-3v3h1v-3H9zm.5 3.5h4v-1h-4v1zm5.5-1.5v-7h-1v7h1zm-15-7v7h1v-7H0zM7.5 10A1.5 1.5 0 019 11.5h1A2.5 2.5 0 007.5 9v1zm0-1A2.5 2.5 0 005 11.5h1A1.5 1.5 0 017.5 10V9zm6 6a1.5 1.5 0 001.5-1.5h-1a.5.5 0 01-.5.5v1zm-12-1a.5.5 0 01-.5-.5H0A1.5 1.5 0 001.5 15v-1z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                </li>
+                <li class="navbar__list"><a href="#" class="navbar__links">OFERTAS</a></li>
+                <li class="navbar__list"><a href="#" class="navbar__links">NOSOTROS</a></li>
+                <li class="navbar__list"><a href="#" class="navbar__links">BUSCANOS</a></li>
             </ul>
-            
         </nav>
 
-        <div class="slide-and-var">
-            <div class="side-nav-container">
-                <ul class="side-nav-ul">
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Panaderia y Repostería</a></li>
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Carnicería</a></li>
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Pizzería</a></li>
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Restaurante</a></li>
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Snacks y Fast Food</a></li>
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Línea Fría</a></li>
-                    <li class="side-nav-li"><a href="#" class="side-nav-a">Cafetería</a></li>
+        <div class="slideshow">
+            <div class="slideshow__navbar">
+                <ul class="slideshow__elements">
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Panaderia y Repostería</a></li>
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Carnicería</a></li>
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Pizzería</a></li>
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Restaurante</a></li>
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Snacks y Fast Food</a></li>
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Línea Fría</a></li>
+                    <li class="slideshow__list"><a href="#" class="slideshow__links">Cafetería</a></li>
                     <!-- <li class="side-nav-li"><a href="#" class="side-nav-a">Planchas</a></li> -->
                 </ul>
             </div>
-            <div class="slider-container">
-              <div class="slider">
-                  <div class="slide current">
-                    <div class="content">
-                      <h2>Slide One</h2>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      </p>
+            <div class="slideshow__slider">
+                <div class="slideshow__slider-container">
+
+                    <div class="slideshow__slides current">
+                        <div class="slideshow__content">
+                            <h2 class="slideshow__tittle">Slide One</h2>
+                            <p class="slideshow__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="slide">
-                    <div class="content">
-                      <h2>Slide Two</h2>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      </p>
+
+                    <div class="slideshow__slides">
+                        <div class="slideshow__content">
+                            <h2 class="slideshow__tittle">Slide Two</h2>
+                            <p class="slideshow__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="slide">
-                    <div class="content">
-                      <h2>Slide Three</h2>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      </p>
+
+                    <div class="slideshow__slides">
+                        <div class="slideshow__content">
+                            <h2 class="slideshow__tittle">Slide Three</h2>
+                            <p class="slideshow__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="slide">
-                    <div class="content">
-                      <h2>Slide Four</h2>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      </p>
+
+                    <div class="slideshow__slides">
+                        <div class="slideshow__content">
+                            <h2 class="slideshow__tittle">Slide Four</h2>
+                            <p class="slideshow__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="slide">
-                    <div class="content">
-                      <h2>Slide Five</h2>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      </p>
+
+                    <div class="slideshow__slides">
+                        <div class="slideshow__content">
+                            <h2 class="slideshow__tittle">Slide Five</h2>
+                            <p class="slideshow__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="slide">
-                    <div class="content">
-                      <h2>Slide Six</h2>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      </p>
-                    </div>
-                  </div>
+
+                    <div class="slideshow__slides">
+                        <div class="slideshow__content">
+                            <h2 class="slideshow__tittle">Slide Six</h2>
+                            <p class="slideshow__text">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>     
               </div>
-            <div class="buttons">
-              <button id="prev"><i class="fas fa-arrow-left"></i></button>
-              <button id="next"><i class="fas fa-arrow-right"></i></button>
-            </div>
+
+              <div class="slideshow__buttons">
+                  <button id="slideshow__prev" class="slideshow__button"><i class="fas fa-arrow-left"></i></button>
+                  <button id="slideshow__next" class="slideshow__button"><i class="fas fa-arrow-right"></i></button>
+              </div>
+
             </div>
         </div>
          
-        <div class="feautures-container">
-            <div class="feautures-divs">
-              <div class="feautures-svg">
-                <i class="fas fa-truck fa-2x"></i>
-              </div>
-              <div class="feautures-text">
-                <h3>Envio Gratis</h3>
-                <p>Aplican restricciones.</p>
-              </div>
+        <div class="bonus">
+            <div class="bonus__elements">
+                <div class="bonus__icon">
+                    <i class="fas fa-truck fa-2x"></i>
+                </div>
+                <div class="bonus__content">
+                    <h3 class="bonus__tittle">Envio Gratis</h3>
+                    <p class="bonus__text">Aplican restricciones.</p>
+                </div>
             </div>
 
-            <div class="feautures-divs">
-              <div class="feautures-svg">
-                <i class="fas fa-check fa-2x"></i>
-              </div>
-              <div class="feautures-text">
-                <h3>GARANTÍA</h3>
-                <p>24 meses por defecto de fábrica.</p>
-              </div>
+            <div class="bonus__elements">
+                <div class="bonus__icon">
+                    <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="bonus__content">
+                    <h3 class="bonus__tittle">GARANTÍA</h3>
+                    <p class="bonus__text">24 meses por defecto de fábrica.</p>
+                </div>
             </div>
 
-            <div class="feautures-divs">
-              <div class="feautures-svg">
-                <i class="fab fa-cc-visa fa-2x"></i>
-              </div>
-              <div class="feautures-text">
-                <h3>Visa Cuotas</h3>
-                <p>Aceptamos todas las tarjetas.</p>
-              </div>
+            <div class="bonus__elements">
+                <div class="bonus__icon">
+                    <i class="fab fa-cc-visa fa-2x"></i>
+                </div>
+                <div class="bonus__content">
+                    <h3 class="bonus__tittle">Visa Cuotas</h3>
+                    <p class="bonus__text">Aceptamos todas las tarjetas.</p>
+                </div>
             </div>
 
-            <div class="feautures-divs">
-              <div class="feautures-svg">
-                <img src="imgs/interconsumo.svg" alt="Interconsumo logo" class="feautures-svg-interconsumo">
-              </div>
-              <div class="feautures-text">
-                <h3>interconsumo</h3>
-                <p>Facilidades de pago.</p>
-              </div>
+            <div class="bonus__elements">
+                <div class="bonus__icon">
+                    <img src="imgs/interconsumo.svg" alt="Interconsumo logo" class="bonus__img">
+                </div>
+                <div class="bonus__content">
+                    <h3 class="bonus__tittle">interconsumo</h3>
+                    <p class="bonus__text">Facilidades de pago.</p>
+                </div>
             </div>
 
-            <div class="feautures-divs">
-              <div class="feautures-svg">
-                <i class="fas fa-headset fa-2x"></i>
-              </div>
-              <div class="feautures-text">
-                <h3>soporte técnico</h3>
-                <p>Te ayudamos a usar tu equipo.</p>
-              </div>
+            <div class="bonus__elements">
+                <div class="bonus__icon">
+                    <i class="fas fa-headset fa-2x"></i>
+                </div>
+                <div class="bonus__content">
+                    <h3 class="bonus__tittle">soporte técnico</h3>
+                    <p class="bonus__text">Te ayudamos a usar tu equipo.</p>
+                </div>
             </div>
         </div>
 
-        <section class="slider-wrap">
-          <h1 class="slider-wrap-tittle">Ofertas</h1>
+        <section class="carousel">
+            <h1 class="main__website-tittle">Ofertas</h1>
 
-          <div class="carousel">
-            <div class="carousel-container">
-              <button aria-label="Previous" class="carousel-prev">
-                <i class="fa fa-chevron-left"></i>
-              </button>
-              <button aria-label="Next" class="carousel-next">
-                <i class="fa fa-chevron-right"></i>
-              </button>
+            <div class="carousel__main">
+                <div class="carousel__container">
+                    <div class="carousel__buttons">
+                      <button aria-label="Previous" class="carousel__prev">
+                          <i class="fa fa-chevron-left"></i>
+                      </button>
+                      <button aria-label="Next" class="carousel__next">
+                          <i class="fa fa-chevron-right"></i>
+                      </button>
+                  </div>
 
-              <div class="carousel-list">
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/1.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.100.&ordm;&ordm;<span>Q.125.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">15%</p>
-                      </div>
+                    <div class="carousel__elements">
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/1.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.100.&ordm;&ordm;<span class="carousel__product-price-prev">Q.125.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">15%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/2.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.200.&ordm;&ordm;<span class="carousel__product-price-prev">Q.225.&ordm;&ordm;</span></p>
+                                <p class="carousel__product-runout">AGOTADO</p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">10%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/3.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.300.&ordm;&ordm;<span class="carousel__product-price-prev">Q.325.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/4.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.400.&ordm;&ordm;<span class="carousel__product-price-prev">Q.425.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">15%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/5.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.500.&ordm;&ordm;<span class="carousel__product-price-prev">Q.525.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">10%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/6.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.600.&ordm;&ordm;<span class="carousel__product-price-prev">Q.625.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">5%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/7.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.700.&ordm;&ordm;<span class="carousel__product-price-prev">Q.725.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/8.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.800.&ordm;&ordm;<span class="carousel__product-price-prev">Q.825.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">15%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/9.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.900.&ordm;&ordm;<span class="carousel__product-price-prev">Q.925.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">10%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/ofertas/10.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.1000.&ordm;&ordm;<span class="carousel__product-price-prev">Q.1250.&ordm;&ordm;</span></p>
+                                <div class="carousel__saletag-container">
+                                    <div class="carousel__saletag">
+                                        <p class="carousel__saletag-text">5%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
                     </div>
-                  </div>
                 </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/2.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.200.&ordm;&ordm;<span>Q.225.&ordm;&ordm;</span></p>
-                    <p class="runOut">AGOTADO</p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">10%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/3.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.300.&ordm;&ordm;<span>Q.325.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/4.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.400.&ordm;&ordm;<span>Q.425.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">15%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/5.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.500.&ordm;&ordm;<span>Q.525.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">10%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/6.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.600.&ordm;&ordm;<span>Q.625.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">5%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/7.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.700.&ordm;&ordm;<span>Q.725.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/8.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.800.&ordm;&ordm;<span>Q.825.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">15%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/9.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;<span>Q.925.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">10%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-elements">
-                  <img src="imgs/ofertas/10.jpg" alt="Licuadora">
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.1,000.&ordm;&ordm;<span>Q.1,250.&ordm;&ordm;</span></p>
-                    <div class="sale-tag-container">
-                      <div class="sale-tag">
-                        <p class="sale-tag-text">5%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </section>
-        
-        <div>
-            <div class="banner-wrapper">
-              <img src="imgs/banners/banner-cirus.jpeg" alt="Banner Cicus">
-            </div>
+
+        <div class="banner__container">
+          <img src="imgs/banners/banner-cirus.jpeg" class="banner_img" alt="Banner Cicus" width="100%" height="auto">
         </div>
+      
+        <section class="newproducts">
+            <h2 class="main__website-tittle">Nuevos Productos</h2>
 
-        <section class="new-products-wrapper">
-            <h2 class="slider-wrap-tittle">Nuevos Productos</h2>
-            <div class="new-products-container">
+            <div class="newproducts__main">
 
-              <div class="new-products-main-product">
-                
-                <div class="new-product-main-sub">
-                  <div class="new-products-main-image">
-                    <img src="imgs/nuevosproductos/1.jpg" alt="">
-                  </div>
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
+                <div class="newproducts__main-product">
+                    <div class="newproducts__main-container">
+                        <div class="newproducts__main-image">
+                            <img src="imgs/nuevosproductos/1.jpg" class="newproducts__main-img" alt="">
+                        </div>
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.900.&ordm;&ordm;</p>
+                        </div>
                     </div>
                 </div>
 
-              </div>
+                <div class="newproducts__second-product">
 
-              <div class="new-products-second-products">
+                    <div class="newproducts__second-elements">
+                        <div class="newproducts__second-image">
+                            <img src="imgs/nuevosproductos/2.jpg" class="newproducts__second-img" alt="">
+                        </div>
 
-                <div class="second-products-divs">
-                  <div class="second-products-image">
-                    <img src="imgs/nuevosproductos/2.jpg" alt="">
-                  </div>
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.200.&ordm;&ordm;</p>
+                        </div>
+                    </div>
 
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
-                  </div>
+                    <div class="newproducts__second-elements">
+                        <div class="newproducts__second-image">
+                            <img src="imgs/nuevosproductos/3.jpg" class="newproducts__second-img" alt="">
+                        </div>
+
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.300.&ordm;&ordm;</p>
+                        </div>
+                    </div>
+
+                    <div class="newproducts__second-elements">
+                        <div class="newproducts__second-image">
+                            <img src="imgs/nuevosproductos/4.jpg" class="newproducts__second-img" alt="">
+                        </div>
+
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.400.&ordm;&ordm;</p>
+                        </div>
+                    </div>
+
+                    <div class="newproducts__second-elements">
+                        <div class="newproducts__second-image">
+                            <img src="imgs/nuevosproductos/5.jpg" class="newproducts__second-img" alt="">
+                        </div>
+
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.500.&ordm;&ordm;</p>
+                        </div>
+                    </div>
+
+                    <div class="newproducts__second-elements">
+                        <div class="newproducts__second-image">
+                            <img src="imgs/nuevosproductos/6.jpg" class="newproducts__second-img" alt="">
+                        </div>
+
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.600.&ordm;&ordm;</p>
+                        </div>
+                    </div>
+
+                    <div class="newproducts__second-elements">
+                        <div class="newproducts__second-image">
+                            <img src="imgs/nuevosproductos/7.jpg" class="newproducts__second-img" alt="">
+                        </div>
+
+                        <div class="carousel__content">
+                            <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="carousel__product-price">Q.700.&ordm;&ordm;</p>
+                        </div>
+                    </div>
+
                 </div>
-                
-                <div class="second-products-divs">
-                  <div class="second-products-image">
-                    <img src="imgs/nuevosproductos/3.jpg" alt="">
-                  </div>
-
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
-                  </div>
-                </div>
-
-                <div class="second-products-divs">
-                  <div class="second-products-image">
-                    <img src="imgs/nuevosproductos/4.jpg" alt="">
-                  </div>
-
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
-                  </div>
-                </div>
-
-                <div class="second-products-divs">
-                  <div class="second-products-image">
-                    <img src="imgs/nuevosproductos/5.jpg" alt="">
-                  </div>
-
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
-                  </div>
-                </div>
-
-                <div class="second-products-divs">
-                  <div class="second-products-image">
-                    <img src="imgs/nuevosproductos/6.jpg" alt="">
-                  </div>
-
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
-                  </div>
-                </div>
-
-                <div class="second-products-divs">
-                  <div class="second-products-image">
-                    <img src="imgs/nuevosproductos/7.jpg" alt="">
-                  </div>
-
-                  <div class="carousel-text-container">
-                    <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p class="carousel-text-container-price">Q.900.&ordm;&ordm;</p>
-                  </div>
-                </div>
-
-              </div>
             </div>
 
-            <div class="carousel-second">
-              <div class="carousel-container-second">
-                <button aria-label="Previous" class="carousel-prev-second">
-                  <i class="fa fa-chevron-left"></i>
-                </button>
-                <button aria-label="Next" class="carousel-next-second">
-                  <i class="fa fa-chevron-right"></i>
-                </button>
-  
-                <div class="carousel-list-second">
+            <!-- <div class="carousel-second">
+                <div class="carousel-container-second">
+                    <button aria-label="Previous" class="carousel-prev-second">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button aria-label="Next" class="carousel-next-second">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+    
+                    <div class="carousel-list-second">
 
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/1.jpg" alt="Licuadora">
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/1.jpg" alt="Licuadora">
 
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/2.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/3.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/4.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/5.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/6.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/7.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/8.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/9.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-elements">
+                            <img src="imgs/nuevosproductos/10.jpg" alt="Licuadora">
+
+                            <div class="carousel-text-container">
+                                <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/2.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/3.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/4.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/5.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/6.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/7.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/8.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/9.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-elements">
-                    
-                    <img src="imgs/nuevosproductos/10.jpg" alt="Licuadora">
-
-                    <div class="carousel-text-container">
-                      <h2 class="carousel-text-container-tittle">Licuadora Oster 2GAL</h2>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <p class="carousel-text-container-price">Q.100.&ordm;&ordm;</p>
-                    </div>
-                  </div>
-
-
-                  
                 </div>
-              </div>
-            </div>
+            </div> -->
 
+
+            <div class="carousel__main cm--second">
+                <div class="carousel__container cc--second">
+                    <div class="carousel__buttons">
+                        <button aria-label="Previous" class="carousel__prev cp--second">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button aria-label="Next" class="carousel__next cn--second">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="carousel__elements ce--second">
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/1.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.100.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/2.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.200.&ordm;&ordm;</p>
+                                <!-- <p class="carousel__product-runout">AGOTADO</p> -->
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/3.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.300.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/4.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.400.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/5.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.500.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/6.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.600.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/7.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.700.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/8.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.800.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/9.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.900.&ordm;&ordm;</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel__list">
+                            <img src="imgs/nuevosproductos/10.jpg" class="carousel__img" alt="Licuadora">
+                            <div class="carousel__content">
+                                <h2 class="carousel__product-name">Licuadora Oster 2GAL</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="carousel__product-price">Q.1000.&ordm;&ordm;</p>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="our-brands-wrapper">

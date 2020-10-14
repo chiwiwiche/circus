@@ -1,29 +1,29 @@
-let arrowsDown = document.querySelector(".top-triangle");
-let closeX = document.querySelector(".closeX");
-let hamburger = document.querySelector(".hamburger");
-let navLinks = document.querySelector(".nav-links");
-let topLinks = document.querySelector(".container-topbar-class");
-let urGoingDown = document.querySelector(".urGoingDown");
-let verticalNav = document.querySelector(".vertical-nav");
+let triangle = document.querySelector(".topbar__triangle");
+let topbar = document.querySelector(".topbar");
+let closeX = document.querySelector(".navbar__close-x");
+let bars = document.querySelector(".navbar__bars");
+let navUl = document.querySelector(".navbar__elements");
+let dropdown = document.querySelector(".navbar--dropdown");
+let verticalNav = document.querySelector(".navbar__verticalnav-elements");
 function openMenu(){
-    navLinks.classList.toggle('open');   
+    navUl.classList.toggle('open');   
 };
 function openTopBar(){
-    topLinks.classList.toggle('down');
-    arrowsDown.classList.toggle('rotation');    
+    topbar.classList.toggle('down');
+    triangle.classList.toggle('rotation');    
 };
 function downMenu(){
     verticalNav.classList.toggle('reopen');   
 };
-hamburger.addEventListener("click", openMenu);
+bars.addEventListener("click", openMenu);
 closeX.addEventListener("click", openMenu);
-arrowsDown.addEventListener("click", openTopBar);
-urGoingDown.addEventListener("click", downMenu);
+triangle.addEventListener("click", openTopBar);
+dropdown.addEventListener("click", downMenu);
 
 /**************************MAIN SLIDE**************************/
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
+const slides = document.querySelectorAll('.slideshow__slides');
+const next = document.querySelector('#slideshow__next');
+const prev = document.querySelector('#slideshow__prev');
 const auto = true; // Auto scroll
 const intervalTime = 9000;
 let slideInterval;
@@ -88,27 +88,27 @@ if (auto) {
 
 /*************************SALES SLIDER*************************/
 window.addEventListener('load', function(){
-  new Glider(document.querySelector('.carousel-list'), {
+  new Glider(document.querySelector('.carousel__elements'), {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
     dragVelocity: 1,
     // dots: '.carousel-bullets',
     arrows: {
-      prev: '.carousel-prev',
-      next: '.carousel-next'
+      prev: '.carousel__prev',
+      next: '.carousel__next'
     },
     responsive: [
       {
-        // screens greater than >= 320px
-        breakpoint: 320,
+        // screens greater than >= 321px
+        breakpoint: 321,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },{
-        // screens greater than >= 480px
-        breakpoint: 480,
+        // screens greater than >= 481px
+        breakpoint: 481,
         settings: {
           // Set to `auto` and provide item width to adjust to viewport
           slidesToShow: 2,
@@ -148,27 +148,27 @@ document.querySelector('.dc-copyright').innerHTML = ("All right reserved. Distri
 
 /*********************NEW PRODUCTS SLIDER*********************/
 window.addEventListener('load', function(){
-  new Glider(document.querySelector('.carousel-list-second'), {
+  new Glider(document.querySelector('.ce--second'), {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
     dragVelocity: 1,
     // dots: '.carousel-bullets',
     arrows: {
-      prev: '.carousel-prev-second',
-      next: '.carousel-next-second'
+      prev: '.cp--second',
+      next: '.cn--second'
     },
     responsive: [
       {
-        // screens greater than >= 320px
-        breakpoint: 320,
+        // screens greater than >= 321px
+        breakpoint: 321,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },{
-        // screens greater than >= 480px
-        breakpoint: 480,
+        // screens greater than >= 481px
+        breakpoint: 481,
         settings: {
           // Set to `auto` and provide item width to adjust to viewport
           slidesToShow: 2,
