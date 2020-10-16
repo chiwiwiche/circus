@@ -33,6 +33,20 @@
 button:focus{ 
     outline: none; 
 }
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.broadsides{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 100px;
+}
+
+
+
 
 
 
@@ -99,7 +113,7 @@ button:focus{
     grid-template-rows: 1fr;
     gap:0 25px;
     margin:0px;
-    padding: 25px 100px;    
+    padding: 25px 0px;    /**/
 }
 .header__img{
     display: block;
@@ -150,7 +164,7 @@ button:focus{
 
 /**************************navbar**************************/
 .navbar{
-    margin: 25px 100px 0px 100px;
+    margin: 25px 0px 0px 0px; /**/
 }
 .navbar__bars{
     display: none;
@@ -205,7 +219,7 @@ button:focus{
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr;
-    padding: 25px 100px;
+    padding: 25px 0px; /**/
     gap: 0px 25px;
 }
 .slideshow__button {
@@ -326,7 +340,7 @@ button:focus{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     gap:5px;
     margin-top: 79px;
     justify-items: space-between;
@@ -391,7 +405,7 @@ button:focus{
 /***********************carousel***************************/
 .carousel{
     margin-top: 50px;
-    padding: 0 75px 0 100px ;
+    padding: 0 75px 0 100px; 
 }
 .carousel__buttons{
     margin-right: 25px;
@@ -516,7 +530,7 @@ button:focus{
 /************************banner****************************/
 .banner__container{
     margin: 50px 0;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     width: 100%;
     height: auto;
 }
@@ -599,7 +613,7 @@ button:focus{
 /************************brands****************************/
 .brands{
     margin: 50px 0;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     text-align: center;
 }
 .brands__container{
@@ -607,7 +621,7 @@ button:focus{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
+    justify-items:center;
 }
 .brans__img{
     width: 150px;
@@ -778,6 +792,151 @@ button:focus{
 }
 /**********************************************************/
 
+/**************************navpages**************************/
+.navbar--pages{
+    display: none;
+}
+.navpages{
+    width: 100%;
+    margin-top: 25px;
+}
+.navpages__elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navpages__links{
+    display: block;
+    width: 150px;
+    padding: 25px 0;
+    text-align: center;
+    color: var(--main-dark-grey);
+    border-bottom:5px solid var(--main-blue);
+}
+.nav--house{
+    padding: 24px 0;
+}
+.active, .navpages__links:hover{
+    color: var(--main-red);
+    border-bottom: 5px solid var(--main-red);
+}
+/************************************************************/
+
+/****************************form****************************/
+.form{
+    background: var(--main-light-grey);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto 100px auto;
+    padding: 50px;
+    border-radius: 3px;
+}
+.form__name,
+.form__tel,
+.form__email,
+.form__consult{
+    background: var(--main-white);
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+    border: none;
+    text-indent: 10px;
+    resize: vertical;
+}
+.formcantsend{
+    background: var(--main-red);
+}
+.form__consult{
+    resize: vertical;
+    height: 200px;
+    max-height: 400px;
+    min-height: 200px;
+    padding: 10px;
+    text-indent: unset;
+}
+.form__name::placeholder,
+.form__tel::placeholder,
+.form__email::placeholder,
+.form__consult::placeholder{
+    color: var(--lighter-blue);
+}
+.formoops{
+    background: black;
+}
+.form__submit{
+    background: var(--main-red);
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    color: var(--main-white);
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    box-shadow: 0 8px  0 -1px #740b26;
+}
+.form__submit:link,
+.form__submit:active{
+    background: var(--darker-red);
+    box-shadow: 0 5px #460717;
+    transform: translateY(5px);
+}
+.formsend{
+    background: var(--main-blue);
+}
+.formcantsend,
+.formoops,
+.formsend{
+    width: 500px;
+    margin: 50px auto 0px auto;
+    color: var(--main-white);
+    padding: 25px;
+    text-align: center;
+    border-radius: 3px;
+}
+/************************************************************/
+
+/***********************nosotros*****************************/
+.nosotros{
+    /* background: red; */
+    margin: 50px 0;
+}
+.nosotros__content{
+    padding: 0 25px;
+    align-self: center;
+    color: var(--darker-dark-grey);
+}
+.nosotros__mision{
+    /* background: rosybrown; */
+    display: flex;
+    flex-direction: row;
+
+}
+.nosotros__mision-img{
+    width: 50%;
+    border-radius: 3px;
+}
+.nosotros__tittle{
+    color:red;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 25px 0;
+}
+.nosotros__vision{
+    /* background: green; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
+.nosotros__vision-img{
+    width: 50%;
+    border-radius: 3px;
+}
+/************************************************************/
+
 
 @media only screen and (max-width: 1100px) {
     /**************************topbar**************************/
@@ -889,10 +1048,15 @@ button:focus{
     }
     /**********************************************************/
 
+    /**************************navpages************************/
+    /**********************************************************/
 }
 
 
 @media only screen and (max-width: 850px) {
+    .broadsides{
+        margin: 0 25px;
+    }
     /**************************topbar**************************/
     .topbar{
         padding: 0px 25px;
@@ -903,7 +1067,7 @@ button:focus{
     .header{  
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        padding: 25px;
+        /* padding: 25px; */
     }
     .header__logo{
         padding-bottom: 25px;
@@ -1010,7 +1174,7 @@ button:focus{
 
     /**************************Bonus***************************/
     .bonus{
-        padding: 0 25px;
+        /* padding: 0 25px; */
     }
     /**********************************************************/
     
@@ -1022,7 +1186,7 @@ button:focus{
 
     /************************banner****************************/
     .banner__container{
-        padding: 0 25px;
+        /* padding: 0 25px; */
     }
     /**********************************************************/
     
@@ -1034,7 +1198,7 @@ button:focus{
 
     /************************brands****************************/
     .brands{
-        padding: 0 25px;
+        /* padding: 0 25px; */
     }
     /**********************************************************/
     
@@ -1049,6 +1213,24 @@ button:focus{
         padding: 10px 25px;  
     }
     /**********************************************************/
+
+    /**************************navpages************************/
+    .navbar--pages{
+        display: inherit;
+    }
+    .navpages{
+        display: none;
+    }
+    /**********************************************************/
+    /****************************form**************************/
+    .form{
+        margin: 50px auto;
+        padding: 25px;
+    }
+    /**********************************************************/
+    
+
+    
     
 }
 
@@ -1200,11 +1382,25 @@ button:focus{
         margin:0px 10px;
     }
     /**********************************************************/
-    
+    /****************************form**************************/
+    .form{
+        width: 100%;
+    }
+    .form__cantsend,
+    .form__oops,
+    .form__send{
+        width: 100%;
+        margin: 100px auto;
+        
+    }
+    /**********************************************************/
 }
 
 
 @media only screen and (max-width: 480px) {
+    .broadsides{
+        margin: 0 10px;
+    }
     /**************************topbar**************************/
     .topbar{
         grid-template-columns: 1fr;
@@ -1215,7 +1411,7 @@ button:focus{
 
     /**************************header**************************/
     .header{
-        padding: 25px 10px;
+        padding: 25px 0px;/**/
     }
     /**********************************************************/
 
@@ -1233,7 +1429,7 @@ button:focus{
     
     /**************************Bonus***************************/
     .bonus{
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
     /**********************************************************/
 
@@ -1248,7 +1444,7 @@ button:focus{
 
     /************************banner****************************/
     .banner__container{
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
     /**********************************************************/
 
@@ -1260,7 +1456,7 @@ button:focus{
 
     /************************brands****************************/
     .brands{
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
     /**********************************************************/
 
@@ -1274,6 +1470,7 @@ button:focus{
         margin-bottom: 5px;
     }
     /**********************************************************/
+    
     
 }
 
@@ -1307,6 +1504,14 @@ button:focus{
         height: 67px;
     }
     /**********************************************************/
+    /****************************form**************************/
+    .form__name,
+    .form__tel,
+    .form__email,
+    .form__consult{
+        font-size: 0.9em;
+    }
+    /**********************************************************/
 
 }
 
@@ -1333,6 +1538,11 @@ button:focus{
         font-size: 1.4em;
     }
     /**********************************************************/
+    /****************************form**************************/
+    .form{
+        padding: 10px;
+    }
+    /**********************************************************/
 
 }
 
@@ -1352,7 +1562,7 @@ button:focus{
 
     /**************************header**************************/
     .header{  
-        padding: 25px 10px;
+        /* padding: 25px 10px; */
         margin-top: -233px;
     }
     .header__slogan{
