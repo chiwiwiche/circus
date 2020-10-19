@@ -118,7 +118,7 @@
                     <a href="nosotros.html" class="navpages__links">NOSOTROS</a>
                 </li>
                 <li class="navepages__list">
-                    <a href="buscanos.php" class="navpages__links active">BUSCANOS</a>
+                    <a href="buscanos.php" class="navpages__links activebar">BUSCANOS</a>
                 </li>
             </ul>
         </nav>
@@ -186,7 +186,7 @@
         </div>
 
     </main>
-    <script src="scripts/glider.min.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/navbar.js"></script>
 </body>
 </html>

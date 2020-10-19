@@ -427,6 +427,9 @@ textarea:focus{
     border-radius: 3px;
     position: relative;
 }
+.carousel__list:hover{
+    border:1px solid var(--main-red);
+}
 .carousel__prev,
 .carousel__next{
     width: 2em;
@@ -545,7 +548,6 @@ textarea:focus{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
     column-gap: 10px;
     margin-top: 25px;
 }
@@ -554,12 +556,17 @@ textarea:focus{
     border-radius:3px;
     display: flex;
     flex-direction: column;
-    padding-top:10px; 
+    padding-top:10px;
+    height: 100%;
 }
-.newproducts__main-container .carousel__content{
+.newproducts__main-container:hover{
+    border:1px solid var(--main-red);
+}
+.carousel__main-content{
     width: 100%;
     height: 100%;
-    padding: 30px 20px;
+    padding: 40px 10px;
+    align-self:center ;
 }
 .newproducts__main-image{
     height: 300px;
@@ -582,6 +589,9 @@ textarea:focus{
     flex-direction: row;
     padding: 0 10px;
     column-gap: 10px;
+}
+.newproducts__second-elements:hover{
+    border:1px solid var(--main-red);
 }
 .newproducts__second-elements .carousel__content{
     width: 100%;
@@ -816,7 +826,7 @@ textarea:focus{
 .nav--house{
     padding: 24px 0;
 }
-.active, .navpages__links:hover{
+.activebar, .navpages__links:hover{
     color: var(--main-red);
     border-bottom: 5px solid var(--main-red);
 }
@@ -899,41 +909,89 @@ textarea:focus{
 
 /***********************nosotros*****************************/
 .nosotros{
-    /* background: red; */
     margin: 50px 0;
 }
 .nosotros__content{
-    padding: 0 25px;
     align-self: center;
     color: var(--darker-dark-grey);
+    width: 100%;
+    text-align: justify;
+}
+.nosotros__elements{
+    margin: 0 auto;
+    width: 210px;
+}
+.nosotros__image-container{
+    width: 100%;
+    overflow-y: hidden;
+}
+.nosotros__list{
+    list-style: inside;
+    font-size: 1.3em;
+    margin: 10px 0;    
 }
 .nosotros__mision{
-    /* background: rosybrown; */
     display: flex;
     flex-direction: row;
-
 }
 .nosotros__mision-img{
     width: 50%;
     border-radius: 3px;
+    margin-right: 25px;
 }
 .nosotros__tittle{
-    color:red;
+    color: var(--main-red);
     text-align: center;
     font-size: 2em;
     font-weight: 300;
-    margin: 25px 0;
+    margin-bottom: 25px;
+}
+.nosotros__valores{
+    display: flex;
+    flex-direction:column;
+}
+.nosotros__valores-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-top: 25px;
 }
 .nosotros__vision{
-    /* background: green; */
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
-
+    margin: 100px 0;
 }
 .nosotros__vision-img{
     width: 50%;
     border-radius: 3px;
+    margin-left: 25px;
+}
+
+
+/************************************************************/
+
+/***********************ofertas******************************/
+.ofertas{
+    margin:50px 0;
+}
+.ofertas__list{
+    border:1px solid var(--main-light-grey);
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+}
+.ofertas__list:hover{
+    border:1px solid var(--main-red);
+}
+.ofertas__main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 25px;
+}
+.ofertas__img{
+    width: 100%;
+
 }
 /************************************************************/
 
@@ -1048,8 +1106,12 @@ textarea:focus{
     }
     /**********************************************************/
 
-    /**************************navpages************************/
+    /***********************ofertas****************************/
+    .ofertas__main{
+        gap:25px;
+    }
     /**********************************************************/
+    
 }
 
 
@@ -1172,33 +1234,15 @@ textarea:focus{
     }
     /**********************************************************/
 
-    /**************************Bonus***************************/
-    .bonus{
-        /* padding: 0 25px; */
-    }
-    /**********************************************************/
-    
     /***********************carousel***************************/
     .carousel{
         padding: 0 0 0 25px;
     }
     /**********************************************************/
 
-    /************************banner****************************/
-    .banner__container{
-        /* padding: 0 25px; */
-    }
-    /**********************************************************/
-    
     /*********************new products*************************/
     .newproducts{
         padding: 0 25px;
-    }
-    /**********************************************************/
-
-    /************************brands****************************/
-    .brands{
-        /* padding: 0 25px; */
     }
     /**********************************************************/
     
@@ -1229,7 +1273,32 @@ textarea:focus{
     }
     /**********************************************************/
     
+    /**************************nosotros************************/
+    .nosotros__mision{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .nosotros__mision-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+    .nosotros__vision{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .nosotros__vision-img{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .nosotros__text{
+        margin:0 auto;
+    }
+    /**********************************************************/
 
+    
     
     
 }
@@ -1394,6 +1463,14 @@ textarea:focus{
         
     }
     /**********************************************************/
+
+    /***********************ofertas****************************/
+    .ofertas__main{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    /**********************************************************/
 }
 
 
@@ -1427,12 +1504,6 @@ textarea:focus{
     }
     /**********************************************************/
     
-    /**************************Bonus***************************/
-    .bonus{
-        /* padding: 0 10px; */
-    }
-    /**********************************************************/
-
     /***********************carousel***************************/
     .carousel{
         padding: 0 0 0 10px;
@@ -1442,21 +1513,9 @@ textarea:focus{
     }
     /**********************************************************/
 
-    /************************banner****************************/
-    .banner__container{
-        /* padding: 0 10px; */
-    }
-    /**********************************************************/
-
     /*********************new products*************************/
     .newproducts{
         padding: 0 0 0 10px;
-    }
-    /**********************************************************/
-
-    /************************brands****************************/
-    .brands{
-        /* padding: 0 10px; */
     }
     /**********************************************************/
 
@@ -1542,6 +1601,13 @@ textarea:focus{
     .form{
         padding: 10px;
     }
+    /**********************************************************/
+    /***********************ofertas****************************/
+    .ofertas__main{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
     /**********************************************************/
 
 }
