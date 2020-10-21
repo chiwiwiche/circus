@@ -18,4 +18,4 @@ function downMenu(){
 bars.addEventListener("click", openMenu);
 closeX.addEventListener("click", openMenu);
 triangle.addEventListener("click", openTopBar);
-dropdown.addEventListener("mousemove", downMenu);
+dropdown.addEventListener("click", downMenu);

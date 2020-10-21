@@ -73,7 +73,7 @@
                     <span class="navbar__icon-closex"><i class="fas fa-times"></i></span>
                 </div>
                 <li class="navbar__list navbar--dropdown">
-                    <a href="#" class="navbar__links navbar__dropdown">
+                    <a href="#" class="navbar__links navbar__dropdown navbar__alonebutton">
                         <span class="navbar__dropdown-link">CATOLOGO</span>
                         <span class="navbar__dropdown-icon"><i class="far fa-arrow-alt-circle-down"></i></span>
                     </a>
