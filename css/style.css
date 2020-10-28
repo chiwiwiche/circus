@@ -247,7 +247,7 @@ textarea:focus{
     transform: translate(-50%, 50%);
     opacity: 0;
     width: 450px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: var(--main-white);
     padding: 35px;
     text-align: center; 
@@ -306,22 +306,22 @@ textarea:focus{
     transition: all 0.7s ease-in-out 0.3s;
 }
 .slideshow__slides:first-child {
-    background: url(../imgs/mainslide/equipo_de_carniceria-carniceria.png) no-repeat center top/cover;    
+    background: url(../imgs/mainslide/equipo_de_carniceria-carniceria.webp) no-repeat center top/cover;    
 }
 .slideshow__slides:nth-child(2) {
-    background: url(../imgs/mainslide/equipo_de_pizzeria-pitzzeria.png) no-repeat center top/cover;
+    background: url(../imgs/mainslide/equipo_de_pizzeria-pitzzeria.webp) no-repeat center top/cover;
 }
 .slideshow__slides:nth-child(3) {
-    background: url(../imgs/mainslide/equipo_de_refrigeracion-refrigeracion-linea_fria.png) no-repeat center top/cover;
+    background: url(../imgs/mainslide/equipo_de_refrigeracion-refrigeracion-linea_fria.webp) no-repeat center top/cover;
 }
 .slideshow__slides:nth-child(4) {
-    background: url(../imgs/mainslide/equipo_de_reposteria-equipo_de_panaderia-pasteleria-panaderia.png) no-repeat center top/cover;
+    background: url(../imgs/mainslide/equipo_de_reposteria-equipo_de_panaderia-pasteleria-panaderia.webp) no-repeat center top/cover;
 }
 .slideshow__slides:nth-child(5) {
-    background: url(../imgs/mainslide/equipo_de_cocina-cocina-industrial-restaurante.png) no-repeat center top/cover;
+    background: url(../imgs/mainslide/equipo_de_cocina-cocina-industrial-restaurante.webp) no-repeat center top/cover;
 } 
 .slideshow__slides:nth-child(6)  {
-    background: url(../imgs/mainslide/snacks-fast_food-comida_rapida-poporoperas.png) no-repeat center center/cover;
+    background: url(../imgs/mainslide/snacks-fast_food-comida_rapida-poporoperas.webp) no-repeat center center/cover;
 }
 .slideshow__tittle {
     margin-bottom: 10px;
