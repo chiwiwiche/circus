@@ -122,10 +122,7 @@
             </ul>
         </nav>
 
-        <?php
-            include("register.php");
-        ?>
-        <form action="" method="post" class="form">
+        <form action="register.php" method="post" class="form">
             <input type="text" name="name" id="inputname" placeholder="Nombre y Apellido" class="form__name" required>
             <input type="tel" name="tel" id="inputel" placeholder="Número de teléfono" class="form__tel" required>
             <input type="email" name="email" id="inputemail" placeholder="Tu email" class="form__email" required>

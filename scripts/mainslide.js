@@ -3,7 +3,7 @@ const slides = document.querySelectorAll('.slideshow__slides');
 const next = document.querySelector('#slideshow__next');
 const prev = document.querySelector('#slideshow__prev');
 const auto = true; // Auto scroll
-const intervalTime = 9000;
+const intervalTime = 6000;
 let slideInterval;
 
 
