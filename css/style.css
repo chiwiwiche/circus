@@ -929,7 +929,8 @@ textarea:focus{
 }
 .nosotros__image-container{
     width: 100%;
-    overflow-y: hidden;
+    height: 400px;
+    margin-top: 25px
 }
 .nosotros__list{
     list-style: inside;
@@ -951,9 +952,9 @@ textarea:focus{
 }
 .nosotros__valores-img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 3px;
-    margin-top: 25px;
 }
 .nosotros__vision{
     display: flex;
@@ -1021,13 +1022,13 @@ textarea:focus{
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: .5s ease;
     background-color: rgba(187, 19, 62, 0);
 }
 .catalogo__item:hover .catalogo__overlay{
     opacity: 1;
-    background-color: rgba(187, 19, 62, 0.4);  
+    /* background-color: rgba(187, 19, 62, 0.4);   */
 }
 .catalogo__item:hover img{
     transform: scale(1.1,1.1);
@@ -1043,6 +1044,10 @@ textarea:focus{
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: bolder;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 0px;
+    width: 100%;
+
 }
 .cafeteria__img,
 .carniceria__img,
