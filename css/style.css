@@ -1166,9 +1166,10 @@ textarea:focus{
 .room-preview {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     width: 100%;
     column-gap: 5px;
+    row-gap: 5px;
     margin-top: 10px;
     background: var(--main-white);
 }
@@ -1974,7 +1975,7 @@ img.room-active {
     .room-preview {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
+        /* grid-template-rows: auto auto; */
     }
     .room-preview img {
         width: 100%;  
