@@ -343,7 +343,7 @@ textarea:focus{
 }
 .bonus__content{
     text-align: center;
-    padding-top: 22px;
+    padding-top: 20px;
 }
 .bonus__elements{
     border:1px solid var(--main-light-grey);
@@ -359,12 +359,12 @@ textarea:focus{
     height: 72px;
     padding: 18px 0;
     background: var(--main-red);
-    border:1px solid var(--main-blue);
+    border:2px solid var(--darker-red);
     text-align: center;
     display: block;
     border-radius: 100%; 
     position: absolute;
-    top:-54px;
+    top:-56px;
     left:50%;
     margin-left: -36px;
     -webkit-animation-duration: 1s;
@@ -390,10 +390,10 @@ textarea:focus{
     color:var(--lighter-dark-grey);
 }
 .bonus__tittle{
-    font-size: 1em;
+    font-size: 0.8em;
     text-transform: uppercase;
     color:var(--lighter-dark-grey);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /**********************************************************/
@@ -636,12 +636,6 @@ textarea:focus{
 .brans__img{
     width: 150px;
     height: 100px;
-    filter: grayscale(100%);
-    opacity: 0.5;
-}
-.brans__img:hover{
-    filter: grayscale(0%);
-    opacity: 1;
 }
 .brands__tittle{
     color: var(--lighter-dark-grey);
@@ -1208,7 +1202,7 @@ img.room-active {
     padding: .8em 0;
     margin-top: 3em;
     display: inline-block;
-    width: 32.8%;
+    width: 49.5%;
     cursor: pointer;
     color: var(--main-white);
     text-align: center;
@@ -1221,15 +1215,9 @@ img.room-active {
     background: #25355b;
 }
 .share__computer-button:nth-child(3){
-    background: #1878F2;
-}
-.share__computer-button:nth-child(3):hover{
-    background: #0d65d9;
-}
-.share__computer-button:nth-child(4){
     background: #25D366;
 }
-.share__computer-button:nth-child(4):hover{
+.share__computer-button:nth-child(3):hover{
     background: #1fad53;
 }
 .share__computer-tittle{
