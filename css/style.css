@@ -46,6 +46,9 @@ textarea:focus{
 }
 
 
+.carousel__list{
+    height: 100%;
+}
 /**************************topbar**************************/
 .topbar{
     align-items: center;
@@ -974,6 +977,7 @@ textarea:focus{
     padding: 10px;
     border-radius: 3px;
     position: relative;
+    height: 100%;
 }
 .ofertas__list:hover{
     border:1px solid var(--main-red);
@@ -987,6 +991,7 @@ textarea:focus{
 .ofertas__img{
     width: 100%;
 }
+
 /************************************************************/
 
 /**************************catalogo**************************/
